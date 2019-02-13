@@ -20,7 +20,10 @@ public class GuiMouse implements MouseListener{
         GuiMouse gui = new GuiMouse();
     }
 
-
+    public void mouseClicked(MouseEvent e){
+        System.out.println("HOW DARE YOU CLICK THERE!!!!!");
+    }
+    
     public void mouseEntered(MouseEvent e) {
         System.out.println("Mouse is in");
     }
