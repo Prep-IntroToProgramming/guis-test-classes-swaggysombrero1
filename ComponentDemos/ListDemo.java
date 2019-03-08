@@ -41,10 +41,14 @@ class ListDemo {
         public void valueChanged(ListSelectionEvent le) {  
             int index = list.getSelectedIndex(); 
 
-            if(index != -1) 
-                label.setText("Current selection: " + names[index]); 
+            if(!le.getValueIsAdjusting()) {
+                if (index!=-1)
+                //label.setText("Current selection: " + names[index]); 
+                System.out.println(names[index]);
             else  
-                label.setText("Please choose an name"); 
+                //label.setText("Please choose an name"); 
+                System.out.println("You're bad");
         }
+    }
     }
 }
